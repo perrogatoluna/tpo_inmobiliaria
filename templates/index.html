@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra&family=Concert+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/style/index.css">
+    <title>Ejemplo I</title>
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <header class="comun">
+        <div class="comun-items">
+            <img class="logo" src="../static/img/codoAcodo.jpg" alt="">
+        </div>
+        <h1 class="comun-items">Ejemplo I - Envío de datos al backend</h1>
+    </header>
+    <!-- Contenido principal -->
+    <main class="container">
+        <div class="items python">
+            <!-- Imágenes -->
+            <img src="../static/img/flask-python.png" alt="imagen">
+        </div>
+        <!-- Formulario -->
+        <!-- Agregar  action y method-->
+        <form class="items letra" action="{{url_for('recibir')}}" method="post">
+            <label for="">Nombre:</label>
+            <!-- El valor del atributo name 
+                es la variable que almacena el dato  -->
+            <input type="text" name="nombreIngresado">
+            <input class="letra boton" type="submit" value="Enviar">
+            <!-- Agregar las variables con la info del backend -->
+            <!-- jinja template -->
+            {{nombre}}
+        </form>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="comun">
+        <h3>Full Stack Python - 2023</h3>
+    </footer>
+
+    <script src="../static/js/index.js"></script>
+</body>
+
+</html>

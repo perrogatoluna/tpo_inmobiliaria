@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Latra */
+/* font-family: 'Alkatra', cursive;
+font-family: 'Concert One', cursive; */
+
+/* Igual clase para header y footer */
+.comun{
+    height: 15vh;
+    background-color: black;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    color:silver;
+    flex-wrap: wrap;
+    font-family: 'Alkatra';
+    font-size: 1vw;
+}
+
+/* Contenido principal */
+.container{
+    display: flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items: center;
+    height: 70vh;
+    
+}
+
+.logo{
+    height: 10vh;
+    border-radius: 50%;
+}
+
+.logo:hover{
+    transform:scale(1.1,1.1);
+}
+
+.python:hover{
+    background-color: aquamarine;
+    
+}
+
+h1:hover{
+    color: cyan;
+}
+
+h3:hover{
+    color: cyan;
+}
+
+.letra{
+    font-family: 'Alkatra';
+    font-size: 2vw;
+}
+
+.boton{
+    border-radius: 10%;
+    border-style: hidden;
+    background-color:darkorange;
+    
+}
+
+
+@media screen and (min-width:320px) and (max-width:600px){
+    .comun{
+        width:100vh;
+        flex-direction: column;
+        height: 25vh;
+        justify-content:space-around;
+        align-items:flex-start;  
+        font-size: 2vw;
+                   
+    }
+
+    .items{
+        margin-left: 10vw;
+    }
+
+    
+   
+
+}
